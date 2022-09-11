@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f1f3f4;
+}
+
+.seat {
+    background-color: #343532;
+    height: 15px;
+    width: 25px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.movie-container {
+    margin: 20px 0;
+}
+
+.movie-container select {
+    margin-left: 10px;
+    padding: 10px;
+    -webkit-appearance: none;
+    background-color: #f1f3f4;
+}
+
+.seat.selected {
+    background-color: #008000;
+}
+
+.seat.booked {
+    background-color: #f2672c;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 20px;
+}
+
+.seat:nth-last-of-type(2) {
+    margin-left: 20px;
+}
+
+.seat:not(.booked):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showSeatsAvailable.seat:not(.booked):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.showSeatsAvailable {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showSeatsAvailable li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showSeatsAvailable li small {
+    margin-left: 5px;
+}
+
+.screen {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 1);
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+p.text {
+    margin: 5px 0;
+}
+
+p.text span {
+    color: #f2672c;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 0 5px;
+    padding: 5px 12px;
+    background-color: #f2672c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #fb7138;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

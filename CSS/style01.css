@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 16.5px;
+    color: #f2672c;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.menu ul li {
+    display: inline-block;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    font-size: 14.5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu ul li a:hover {
+    color: #f2672c;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
+    height: 400px;
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.content .images {
+    height: 100%;
+    width: 100%;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+}
+
+.btm-slider {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.btm-slider span {
+    height: 5px;
+    width: 40px;
+    background: rgba(100, 100, 100, 0.5);
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.btm-slider span:active {
+    background: white;
+}
+
+.content .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 5px;
+}
+
+.slide span {
+    font-size: 35px;
+    color: white;
+    line-height: 50px;
+    cursor: pointer;
+
+}
+
+.content .right {
+    right: 0;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie h3 {
+    padding-top: 15px;
+}
+
+.movie button {
+    margin-top: 10px;
+    padding: 7px 15px;
+    background-color: #f2672c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.movie button:hover {
+    background-color: #fb7138;
+}
+
+.movie {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.heading-content {
+    padding-top: 75px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    text-align: left;
+}
+
+footer {
+    margin-top: 150px;
+    margin-bottom: 45px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+footer ul li {
+    list-style: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.bottom-footer {
+    text-align: center;
+    background-color: #f2672c;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+}
+
+.bottom-footer p {
+    font-size: 15.5px;
+}
+
+@media only screen and (max-width: 567px) {
+    .movies {
+        flex-direction: column;
+    }
+
+    .movie {
+        padding-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    footer {
+        flex-direction: column;
+        padding-left: 30px;
+        margin-top: 100px;
+        margin-bottom: 25px;
+    }
+
+    .footer-content {
+        padding-bottom: 25px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+button a {
+    color: white;
+}
+
+.menu a {
+    color: black;
+}
+
+@media only screen and (max-width: 567) {
+    nav {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+} 

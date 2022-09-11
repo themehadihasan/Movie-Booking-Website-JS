@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndianMOVIES</title>
+    <link rel="stylesheet" href="CSS/style01.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="logo"><a href="./index.html"><h2>IndianMOVIES</h2></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./booking.html">MOVIE BOOKING</a></li>
+                </ul>
+            </div>
+            <!-- <div class="toggle">
+                <i class='bx bx-menu'></i>
+            </div> -->
+        </nav>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="images">
+                <img src="./Images/maxresdefault (19).jpg">
+                <img src="./Images/IMAX-unveils-Yashs-dhamakedaar-fierce-look-in-K.G.F.-Chapter-2-poster.jpg">
+                <img src="./Images/Tiger-Zinda-Hai-9.jpg">
+            </div>
+            <div onclick="side_slide(-1)" class="slide left">
+                <span><i class='bx bx-chevron-left'></i></span>
+            </div>
+            <div onclick="side_slide(1)" class="slide right">
+                <span><i class='bx bx-chevron-right'></i></span>
+            </div>
+            <div class="btm-slider">
+                <span onclick="btm_slide(1)"></span>
+                <span onclick="btm_slide(2)"></span>
+                <span onclick="btm_slide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <div class="heading-content">
+        <h1>POPULAR MOVIES</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="container">
+        <div class="movies">
+            <div class="movie">
+                <div class="poster">
+                    <img src="./Images/pushpa.jpg" alt="">
+                </div>
+                <h3><b>PUSHPA</b> (PART 01)</h3>
+                <p>Hindi | U/A</p>
+                <button><a href="./booking.html">BOOK</a></button>
+            </div>
+
+            <div class="movie">
+                <div class="poster">
+                    <img src="./Images/imax-unveils-yash-s-dhamakedaar-fierce-look-in-k-g-f-chapter-2-poster.jpg" alt="">
+                </div>
+                <h3><b>KGF</b> (CHAPTER 02)</h3>
+                <p>Hindi | U/A</p>
+                <button><a href="./booking.html">BOOK</a></button>
+            </div>
+
+            <div class="movie">
+                <div class="poster">
+                    <img src="./Images/Tiger-Zinda-Hai-poster123.jpg" alt="">
+                </div>
+                <h3>TIGER ZINDA HAI</h3>
+                <p>Hindi | U/A</p>
+                <button><a href="./booking.html">BOOK</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <footer>
+            <div class="footer-content">
+                <h3>UPCOMING MOVIES</h3>
+                <ul>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>NOW PLAYING</h3>
+                <ul>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>NEXT CHANGE</h3>
+                <ul>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                    <li>Demo Movie</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>ENQUIRIES</h3>
+                <ul>
+                    <li>Events</li>
+                    <li>Dealership</li>
+                    <li>Advertising</li>
+                    <li>Support</li>
+                    <li>Technical Support</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div class="bottom-footer">
+        <p>Copyright © 2022 IndianMOVIES</p>
+    </div>
+    <script src="JS/script01.js"></script>
+</body>
+</html>
