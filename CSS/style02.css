@@ -16,6 +16,14 @@ body {
     background: #f1f3f4;
 }
 
+.logo-booking {
+    margin-bottom: 30px;
+}
+
+img {
+    width: 175px;
+}
+
 .seat {
     background-color: #343532;
     height: 15px;
